@@ -26,7 +26,7 @@ c      Remember, pgbeg should be integer
 c      ier=pgbeg(0,'plot.ps/VPS',1,1)
 c      Remember, pgopen should be integer
       write(t_,1000) mnemonic(1:length_char(mnemonic))
- 1000 format(a,".ps/VCPS") !YuP: was /VPS (vertical black&white)
+ 1000 format(a,".ps/PS") !YuP: was /VPS (vertical black&white)
                            ! Use /VCPS for vertical Color pages
       ier=PGOPEN(t_)
       CALL PGSCI(1)
