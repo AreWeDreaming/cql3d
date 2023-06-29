@@ -58,14 +58,14 @@ c      write(*,*) 'ier=',ier
       !'CURSOR'    * - does the current device have a graphics cursor?
       !                ('YES' or 'NO').
       ! Two other arg. are outputs:
-      CALL PGQINF('TYPE', PG_VAL, PG_L)
-      WRITE (*,*) 'PGPLOT device type: ', PG_VAL(1:PG_L)
-      CALL PGQINF('DEVICE', PG_VAL, PG_L)
-      WRITE (*,*) 'PGPLOT device: ', PG_VAL(1:PG_L)
-      CALL PGQINF('USER', PG_VAL, PG_L)
-      WRITE (*,*) 'PGPLOT user: ', PG_VAL(1:PG_L)
-      CALL PGQINF('NOW', PG_VAL, PG_L)
-      WRITE (*,*) 'PGPLOT time now: ', PG_VAL(1:PG_L)
+      ! CALL PGQINF('TYPE', PG_VAL, PG_L)
+      ! WRITE (*,*) 'PGPLOT device type: ', PG_VAL(1:PG_L)
+      ! CALL PGQINF('DEVICE', PG_VAL, PG_L)
+      ! WRITE (*,*) 'PGPLOT device: ', PG_VAL(1:PG_L)
+      ! CALL PGQINF('USER', PG_VAL, PG_L)
+      ! WRITE (*,*) 'PGPLOT user: ', PG_VAL(1:PG_L)
+      ! CALL PGQINF('NOW', PG_VAL, PG_L)
+      ! WRITE (*,*) 'PGPLOT time now: ', PG_VAL(1:PG_L)
       
       !Inquire color index range:
       CALL PGQCIR(PG_C1, PG_C2)
